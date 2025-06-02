@@ -28,3 +28,7 @@ def count_nucleotide_freq(dna_seq: str) -> dict:
 
 def dna_to_rna(dna_seq: str) -> str:
     return dna_seq.replace("T", "U")
+
+def dna_reverse_complement(dna_seq: str) -> str:
+    complement = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
+    return ''.join(complement[nuc] for nuc in reversed(dna_seq))
