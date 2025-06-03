@@ -11,6 +11,22 @@ def load_dna_seq(file_path: str) -> str:
     with open(file_path, 'r') as dna_seq:
         return dna_seq.read().strip()
 
+def load_dna_seq_fasta(file_path: str) -> dict[str: str]:
+        sequences_from_fasta = {}
+        with open(file_path, 'r') as fasta_file:
+            lines = fasta_file.readlines()
+            index = 0
+            while index < len(lines):
+                if lines[index].startswith(">"):
+                    key = lines[index][1:].strip()
+                    if index + 1 < len(lines):
+                        value = lines[index + 1].strip()
+                    else:
+                        value = ""
+                    sequences_from_fasta[key] = value
+                    index += 2
+        return sequences_from_fasta
+
 def verify_seq(dna_seq: str):
     dna_seq_normalized = dna_seq.upper()
     for nucleotide in dna_seq_normalized:
@@ -32,3 +48,9 @@ def dna_to_rna(dna_seq: str) -> str:
 def dna_reverse_complement(dna_seq: str) -> str:
     complement = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
     return ''.join(complement[nuc] for nuc in reversed(dna_seq))
+
+def gc_content(dna_seq: str) -> float:
+    total = len(dna_seq)
+    gc_nucleotides = sum(1 for nucleotide in dna_seq if nucleotide in ['G', 'C'])
+    gc_percentage = (gc_nucleotides / total) * 100
+    return gc_percentage
