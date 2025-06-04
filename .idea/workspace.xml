@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9baecc3d-2015-430a-af02-d0709dc75084" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Rosalind Problems/computing_GC_content.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rosalind Problems/rabbits_and_recurrence_relations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rosalind Problems/counting_point_mutations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rosalind Problems/mendels_first_law.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rosalind Problems/complementing_a_strand_of_dna.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rosalind Problems/complementing_a_strand_of_dna.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rosalind Problems/computing_GC_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rosalind Problems/computing_GC_content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rosalind Problems/counting_dna_nucleotides.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rosalind Problems/counting_dna_nucleotides.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rosalind Problems/transcribing_dna_into_rna.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rosalind Problems/transcribing_dna_into_rna.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dna_toolkit.py" beforeDir="false" afterPath="$PROJECT_DIR$/dna_toolkit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +44,7 @@
     "Python.complementing_a_strand_of_dna.executor": "Run",
     "Python.computing_GC_content.executor": "Run",
     "Python.counting_dna_nucleotides.executor": "Run",
+    "Python.counting_point_mutations.executor": "Run",
     "Python.rabbits_and_recurrence_relations.executor": "Run",
     "Python.transcribing_dna_into_rna.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
